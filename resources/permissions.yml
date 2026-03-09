@@ -1,0 +1,36 @@
+default-group: default
+
+groups:
+  default:
+    permissions:
+      - "pocketmine.command.help"
+      - "pocketmine.command.list"
+      - "pocketmine.command.tell"
+      - "pocketmine.command.me"
+    inheritance: []
+    prefix: "&7[Игрок] &f"
+    suffix: ""
+
+  moderator:
+    permissions:
+      - "pocketmine.command.kick"
+      - "pocketmine.command.ban.player"
+      - "pocketmine.command.ban.ip"
+      - "pocketmine.command.ban.list"
+      - "pocketmine.command.unban.player"
+      - "pocketmine.command.unban.ip"
+      - "pocketmine.command.say"
+    inheritance:
+      - "default"
+    prefix: "&3[Mod]&r "
+    suffix: ""
+
+  admin:
+    permissions:
+      - "*"
+    inheritance:
+      - "moderator"
+    prefix: "&c[Admin]&r "
+    suffix: ""
+
+users: {}

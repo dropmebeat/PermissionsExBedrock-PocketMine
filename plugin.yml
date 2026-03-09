@@ -1,0 +1,25 @@
+name: PermissionsExBedrock
+version: 1.0.0
+main: icrafts\permissionsexbedrock\PermissionsExBedrock
+api: 5.0.0
+author: iCrafts
+description: PermissionsEx-style groups and permissions for PocketMine-MP Bedrock
+
+commands:
+  pex:
+    description: Manage users, groups, and permissions
+    usage: "/pex help"
+    aliases: [permissionsex]
+    permission: pex.command
+
+permissions:
+  pex.command:
+    default: op
+  pex.command.reload:
+    default: op
+  pex.command.user:
+    default: op
+  pex.command.group:
+    default: op
+  pex.command.list:
+    default: op
