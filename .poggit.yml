@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/dropmebeat/PermissionsExBedrock-PocketMine
+build-by-default: true
+branches:
+- main
+projects:
+  PermissionsExBedrock-PocketMine:
+    path: ""
+...
